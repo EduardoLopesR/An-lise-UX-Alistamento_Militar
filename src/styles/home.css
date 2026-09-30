@@ -7,9 +7,10 @@ body {
 header {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    width: 100%;
+    display: flex;
+    gap: 20px;
     }
         .container {
             max-width: 1200px;
@@ -26,6 +27,7 @@ header {
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
+            margin-top:2vh;
         }
         .logo img {
             max-width: 100%;
@@ -57,9 +59,11 @@ header {
             color: rgb(0, 0, 0);
             position: relative;
             bottom: 0;
-            width: 100%;
+            
+
+            
         }
-        @media (max-width: 600px) {
+        @media (max-width: 100%) {
             .branches {
                 flex-direction: column;
                 align-items: center;
@@ -127,7 +131,9 @@ header {
     align-items: center;
     cursor: pointer;
 }
-
+p{
+    margin-left: 4vh;
+}
  h1 {
     position: relative;
     z-index: 1;
@@ -138,6 +144,22 @@ header {
     margin: 0;
 
     text-shadow: 2px 2px 5px black;
+}
+h4 {
+    position: relative;
+    z-index: 1;
+
+    font-size: 2vh;
+    text-align: center;
+    margin: 0;
+    margin-left: 2vh;
+    margin-top: 2vh;
+    
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60%;
 }
 .branch h3 {
     position:relative;
@@ -216,6 +238,20 @@ header {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-left: 60vh;
+    margin-left: 5vh;
+    margin-top: 3vh;
+}
+.logo {
+    width: 5%;
+    height: auto;
+    margin-left:5%
     
+}
+body.MaringaPage {
+    background-image: url('../assets/marinhaH.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    content: "";
 }
