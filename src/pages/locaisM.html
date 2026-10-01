@@ -18,30 +18,25 @@
     </header>
         <div class="container-content">
             <div class="bannerM">
-            <h1>SERVIÇOS DISPONÍVEIS</h1>
+            <h1>LOCAIS DE ATENDIMENTO</h1>
             </div>
             <div class="branches">
-                <div class="branch" onclick="window.open('alistamento.html', '_self')">
-                    <h3>Alistamento Online</h3>
+                <div class="branch-fixa">
+                    <h3>CEP:</h3> 
+                    <input type="text" placeholder="Digite o CEP" id="cep">
+                    <button onclick="buscarCEP()">Buscar</button>
                 </div>
                 <div class="branch">
-                    <h3>Acompanhar Alistamento</h3>
+                <div id="endereco"></div>
+                    <div id="resultado">
+                       <h3>Locais Encontrados</h3>
+                    </div>
                 </div>
-                <div class="branch" onclick="window.open('locaisM.html', '_self')">
-                    <h3>Locais de Atendimento</h3>
-                </div>
-                <div class="branch">
-                    <h3>Solicitar Certificado de Dispensa</h3>
-                </div>
-                <div class="branch">
-                    <h3>Certificados Militares</h3>
-                </div>
-                <div class="branch">
-                    <h3>Auntenticar Certificados</h3>
+                <div class="voltar logo-exercito" onclick="window.open('marinha.html', '_self')">
+                    <h3>Voltar</h3>
                 </div>
             </div>
         </div>
-
     <footer>
         <img src="../assets/youtube.png" class="social-icon" onclick="window.open('https://www.youtube.com/@exercitooficial', '_blank')">
         <img src="../assets/instagram.png" class="social-icon" onclick="window.open('https://www.instagram.com/exercito_oficial/', '_blank')">
@@ -49,5 +44,7 @@
         <img src="../assets/facebook.png" class="social-icon" onclick="window.open('https://www.facebook.com/exercito/?locale=pt_BR', '_blank')">
         <p>Diretoria de Serviço Militar | Direitos Reservados</p>
     </footer>
+    <script src="../scripts/locais.js"></script>
+    <script src="../scripts/cep.js"></script>
 </body>
 </html>
