@@ -378,7 +378,7 @@ input{
 .branch-alistamento form {
     display: grid;
     grid-template-columns: 1fr 1fr;   
-    gap: 10px 20px;  ;                 
+    gap: 10px 20px;                  
 }
 
 .branch-alistamento .btn {

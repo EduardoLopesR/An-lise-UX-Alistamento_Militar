@@ -37,6 +37,12 @@
                 </div>
             </div>
         </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper">
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
     <footer>
         <img src="../assets/youtube.png" class="social-icon" onclick="window.open('https://www.youtube.com/@exercitooficial', '_blank')">
         <img src="../assets/instagram.png" class="social-icon" onclick="window.open('https://www.instagram.com/exercito_oficial/', '_blank')">
@@ -46,5 +52,11 @@
     </footer>
     <script src="../scripts/locais.js"></script>
     <script src="../scripts/cep.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget(
+        "https://vlibras.gov.br/app"
+        );
+    </script>
 </body>
 </html>
