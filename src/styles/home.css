@@ -96,7 +96,7 @@ header {
             cursor: pointer;
         }
         .branch-fixa {
-            max-height: 10vh;
+            max-height: 15vh;
             min-width: 15vw;
             text-align: center;
             margin: 10px;
@@ -107,8 +107,8 @@ header {
             font-size: 2vh;
         }
         .voltar{
-            max-height: 10vh;
-            min-width: 15vw;
+            max-height: 5vh;
+            min-width: 10vw;
             text-align: center;
             align-items: center;
             margin: 10px;
@@ -319,7 +319,85 @@ h4 {
     height: auto;
     margin-left:5%
     
-}/*
+}
+.alistarM {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    align-items: center;
+}
+input{
+    width: 50%;
+    max-width: 50%;
+    margin: 5px auto;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #333333;
+    padding: 1vh;
+    background-color: #f9f9f9;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn{
+    width: 20%;
+    min-width: 30%;
+    max-width: 30%;
+    margin: 5px ;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #0000fd;
+    padding: 1vh;
+    background-color: #f9f9f9;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover {
+    background-color: #020202;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    border-color: #999999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.branch-alistamento {
+    min-width: 40vw;
+    text-align: center;
+    margin: 10px;
+    padding: 2vh;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 2vh;
+    align-items: center;
+}
+.branch-alistamento form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    gap: 10px 20px;  ;                 
+}
+
+.branch-alistamento .btn {
+    grid-column: 1 / -1;    
+    justify-self: center;
+    margin: 5px 0 0;
+}
+
+.campo input {
+    min-width: 10vw;    
+    width: 20vw;        
+}
+
+@media (max-width: 600px) {
+    .branch-alistamento form {
+        grid-template-columns: 1fr;
+    }
+}
+/*
 body.MaringaPage {
     background-image: url('../assets/Fundo-removebg-preview.png');
     background-size: cover;

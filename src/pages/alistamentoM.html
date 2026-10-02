@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marinha-Locais de Atendimento</title>
     <link rel="stylesheet" href="../styles/home.css">
+    <script src="https://kit.fontawesome.com/75531bd4f3.js" crossorigin="anonymous"></script>
 </head>
 <body class="marinha-page">
     <header>
@@ -18,19 +19,33 @@
     </header>
         <div class="container-content">
             <div class="bannerM">
-            <h1>LOCAIS DE ATENDIMENTO</h1>
+            <h1>ALISTAMENTO ONLINE</h1>
             </div>
             <div class="branches">
-                <div class="branch-fixa">
-                    <h3>CEP:</h3> 
-                    <input type="text" placeholder="Digite o CEP" id="cep">
-                    <button class="btn" onclick="buscarCEP()">Buscar</button>
-                </div>
-                <div class="branch">
-                <div id="endereco"></div>
-                    <div id="resultado">
-                       <h3>Locais Encontrados</h3>
-                    </div>
+                <div class="branch-alistamento">
+                    <form method="post" action="alistamento.php">
+                        <div class="campo">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <input type="text" placeholder="Nome completo" id="nome">
+                        </div>
+                        <div class="campo">
+                            <i class="fa-solid fa-id-card"></i>
+                            <input type="number" placeholder="CPF" id="cpf">
+                        </div>
+                        <div class="campo">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Email" id="email">
+                        </div>
+                        <div class="campo">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="number" placeholder="Telefone" id="telefone">
+                        </div>
+                        <div class="campo">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" placeholder="Endereço" id="endereco">
+                        </div>
+                        <button class="btn" type="submit">Enviar</button>
+                    </form>
                 </div>
                 <div class="voltar logo-exercito" onclick="window.open('marinha.html', '_self')">
                     <h3>Voltar</h3>
@@ -46,5 +61,6 @@
     </footer>
     <script src="../scripts/locais.js"></script>
     <script src="../scripts/cep.js"></script>
+
 </body>
 </html>
