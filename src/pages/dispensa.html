@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Dispensa - Marinha</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link type="image/png" href="../assets/marinha.png" rel="icon">
+</head>
+<body class="marinha-page">
+    <header>
+        <img src="../assets/marinha.png" class="logo">
+        <img src="../assets/logo.png" class="logo-exercito" onclick="window.open('index.html', '_self')">
+        <div class="profile-info">
+            <h4>CPF: 123.456.789-00 <br>Telefone: (11) 99999-9999</h4>
+            <h4>Nome: João da Silva <br>Email: joao.silva@example.com</h4>
+        </div>
+        <img src="../assets/default.svg" class="profile">
+    </header>
+
+    <div class="container-content">
+        <div class="bannerM">
+            <h1>SOLICITAR DISPENSA</h1>
+        </div>
+
+        <div class="branch-alistamento ">
+            <h2>Certificado de Dispensa de Incorporação (CDI)</h2>
+            <p>Preencha os dados abaixo para solicitar o seu certificado:</p>
+
+            <form style="display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 20px;">
+                <div class="campo" style="width: 100%;">
+                    <label><strong>CPF / RA:</strong></label><br>
+                    <input type="text" value="123.456.789-00" required>
+                </div>
+
+                <div class="campo" style="width: 100%;">
+                    <label><strong>Motivo da Dispensa:</strong></label><br>
+                    <select style="width: 50%; padding: 12px; border-radius: 8px; border: 1px solid #cccccc; background-color: #f9f9f9; font-size: 16px;" required>
+                        <option value="">Selecione o motivo...</option>
+                        <option value="excesso">Excesso de Contingente</option>
+                        <option value="arrimo">Arrimo de Família</option>
+                        <option value="medico">Incapacidade Física / Médica</option>
+                    </select>
+                </div>
+
+                <div class="campo" style="width: 100%;">
+                    <label><strong>Anexar Comprovante (PDF/Imagem):</strong></label><br>
+                    <input type="file" style="width: 50%; border: none; background: transparent;">
+                </div>
+
+                <button type="submit" class="btn">Enviar Solicitação</button>
+            </form>
+        </div>
+         <div class="voltar branch" onclick="window.open('marinha.html', '_self')" style="max-width: 10vw; cursor: pointer; text-align: center ; align-items: center; justify-content: center; margin-top: 20px; margin-left: 37%;">
+            <h3>Voltar</h3>
+        </div>
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="../assets/youtube.png" class="social-icon" onclick="window.open('https://www.youtube.com/@exercitooficial', '_blank')">
+        <img src="../assets/instagram.png" class="social-icon" onclick="window.open('https://www.instagram.com/exercito_oficial/', '_blank')">
+        <img src="../assets/linkedin.jpg" class="social-icon" onclick="window.open('https://www.linkedin.com/company/exercito?originalSubdomain=br', '_blank')">
+        <img src="../assets/facebook.png" class="social-icon" onclick="window.open('https://www.facebook.com/exercito/?locale=pt_BR', '_blank')">
+        <p>Diretoria de Serviço Militar | Direitos Reservados</p>
+    </footer>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+</body>
+</html>

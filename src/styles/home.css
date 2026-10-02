@@ -116,7 +116,7 @@ header {
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            font-size: 2vh;
+            font-size: 3vh;
             
         }
         .branch h2 {
@@ -238,11 +238,7 @@ h4 {
     margin: 0;
 
 }
-.voltar {
-    font-size: 3vh;
-    text-align:left;
-    margin: 0;
-}
+
 .marinha {
     color: #0033cc;
     text-shadow: 1px 0px 2px black;
